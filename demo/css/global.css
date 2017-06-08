@@ -1,0 +1,90 @@
+body {
+line-height: 1.42857143;
+overflow-x: hidden;
+transition: background-color .5s;
+}
+
+.sidenav {
+height: 100%;	
+left: 0;
+overflow-x: hidden;
+position: fixed;
+top: 0;
+transition: 0.5s;
+width: 0;
+z-index: 1;
+}
+
+.sidenav .nav-header {
+background: #efefef;
+display: inline-block;
+height: 50px;
+line-height: 50px;
+width: 100%;
+}
+
+.sidenav ul {
+list-style: none;	
+margin: 0;
+padding: 0;
+}
+
+.sidenav ul li {
+padding: 5px 10px;	
+}
+
+.sidenav a {
+display: block;
+/*margin: 0 10px;*/
+/*padding: 4px 12px;*/
+text-decoration: none;
+transition: 0.3s;
+}
+
+.closebtn {
+position: absolute;
+right: 20px;
+top: 0;
+}
+
+#main {
+transition: margin-left .5s;
+}
+
+.row {
+margin-right: -15px;
+margin-left: -15px;
+}
+
+.container-fluid {
+margin-right: auto;
+margin-left: auto;
+padding-right: 15px;
+padding-left: 15px;
+}
+
+.col-lg-12 {
+position: relative;
+min-height: 1px;
+padding-right: 15px;
+padding-left: 15px;
+}
+@media (min-width: 1200px) {
+	.col-lg-12 {
+	float: left;
+	}
+	.col-lg-12 {
+	width: 100%;
+	}
+}
+
+.container-fluid:before, .container-fluid:after, 
+.row:before, .row:after {
+display: table;
+content: " ";
+}
+.clearfix:after, 
+.container-fluid:after, 
+.row:after {
+clear: both;
+}
